@@ -84,7 +84,7 @@
       <div class="carousel-inner">
         <!-- Item 1 -->
         <div class="item active">
-          <img src="/img/back1.jpg" alt="banner">          
+          <img src="/img/handyman-banner.jpg" alt="banner">          
             <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
@@ -100,7 +100,7 @@
 
         <!-- Item 1 -->
         <div class="item">
-          <img src="/img/back2.jpg" alt="banner">          
+          <img src="/img/b1.jpg" alt="banner">          
              <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
@@ -116,7 +116,7 @@
 
         <!-- Item 1 -->
         <div class="item">
-          <img src="/img/back3.jpg" alt="banner">          
+          <img src="/img/loft-5.jpg" alt="banner">          
              <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
@@ -146,8 +146,8 @@
         </div>
         <!-- #Item 1 -->
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon-chevron-left"><i class="fa fa-angle-left"></i></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon-chevron-right"><i class="fa fa-angle-right"></i></span></a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
 <!-- #Slider Ends -->
 </div>
