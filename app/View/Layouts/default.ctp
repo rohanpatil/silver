@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'ShowPro 4.0 by Anyone Home Inc');
+$cakeDescription = __d('cake_dev', 'Vision Construction Group');
 ?>
 <!DOCTYPE html>
 <html>
