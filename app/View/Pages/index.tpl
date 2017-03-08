@@ -18,7 +18,7 @@
 <!-- animate.css -->
 <link rel="stylesheet" href="/css/animate.css" />
 <link rel="stylesheet" href="/css/set.css" />
-
+<link rel="stylesheet" href="/css/datepicker.css" />
 <!-- gallery -->
 <link rel="stylesheet" href="/css/blueimp-gallery.min.css">
 
@@ -62,8 +62,8 @@
                  <li class="active"><a href="#home">Home</a></li>
                  <li ><a href="#about">About Us</a></li>
                  <li ><a href="#works">Jobs We Do</a></li>
-                 <li ><a href="#partners">Partners</a></li>
-                 <li ><a href="#contact">Contact</a></li>                 
+                 <li ><a href="#book">Book An Appointment</a></li>  
+                 <li ><a href="#contact">Contact</a></li>                       
               </ul>
             </div>
             <!-- #Nav Ends -->
@@ -74,9 +74,6 @@
       </div>
     </div>
 <!-- #Header Starts -->
-
-
-
 
 <div id="home">
 <!-- Slider Starts -->
@@ -89,9 +86,11 @@
             	<div class="caption-wrapper">
             		<div class="caption-info">
             		<img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
-              		<h1 class="animated bounceInLeft">Creative digital agency</h1>
-              		<p class="animated bounceInRight">Lead by passionate and uber progressive team that lives and breathes design.</p>
-              		<div class="scroll animated fadeInUp"><a href="#works" class="btn btn-default"><i class="fa fa-flask"></i>  View Project</a> <a href="#contact" class="btn btn-default"><i class="fa fa-paper-plane-o"></i> Start Your Project</a></div>
+              		<h1 class="animated bounceInLeft">Design &bull; Build &bull; Remodel</h1>
+              		<div class="scroll animated fadeInUp">
+              			<a href="#works" class="btn btn-default"><i class="fa fa-wrench"></i>  Jobs We Do</a> 
+              			<a href="#book" class="btn btn-default"><i class="fa fa-calendar"></i> Start Your Project</a>
+              		</div>
               		</div>
               	</div>
             </div>
@@ -104,13 +103,15 @@
              <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
-        	<img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
-                  <h1 class="animated bounceInLeft">Creative digital agency</h1>
-                  <p class="animated bounceInRight">Lead by passionate and uber progressive team that lives and breathes design.</p>
-                  <div class="scroll animated fadeInUp"><a href="#works" class="btn btn-default"><i class="fa fa-flask"></i>  View Project</a> <a href="#contact" class="btn btn-default"><i class="fa fa-paper-plane-o"></i> Start Your Project</a></div>
-                  </div>
-                </div>
-            </div>
+        				<img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
+                  		<h1 class="animated bounceInLeft">Design &bull; Build &bull; Remodel</h1>
+              			<div class="scroll animated fadeInUp">
+              				<a href="#works" class="btn btn-default"><i class="fa fa-wrench"></i>  Jobs We Do</a> 
+              				<a href="#book" class="btn btn-default"><i class="fa fa-calendar"></i> Start Your Project</a>
+              			</div>
+               	 	</div>
+            	</div>
+        	</div>
         </div>
         <!-- #Item 1 -->
 
@@ -120,13 +121,15 @@
              <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
-                <img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
-                  <h1 class="animated bounceInLeft">Creative digital agency</h1>
-                  <p class="animated bounceInRight">Lead by passionate and uber progressive team that lives and breathes design.</p>
-                  <div class="scroll animated fadeInUp"><a href="#works" class="btn btn-default"><i class="fa fa-flask"></i>  View Project</a> <a href="#contact" class="btn btn-default"><i class="fa fa-paper-plane-o"></i> Start Your Project</a></div>
-                  </div>
+                	<img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
+                  	<h1 class="animated bounceInLeft">Design &bull; Build &bull; Remodel</h1>
+              		<div class="scroll animated fadeInUp">
+              			<a href="#works" class="btn btn-default"><i class="fa fa-wrench"></i>  Jobs We Do</a> 
+              			<a href="#book" class="btn btn-default"><i class="fa fa-calendar"></i> Start Your Project</a>
+              		</div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- #Item 1 -->
 
@@ -136,13 +139,15 @@
              <div class="carousel-caption">
             	<div class="caption-wrapper">
             		<div class="caption-info">
-                <img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
-                  <h1 class="animated bounceInLeft">Creative digital agency</h1>
-                  <p class="animated bounceInRight">Lead by passionate and uber progressive team that lives and breathes design.</p>
-                  <div class="scroll animated fadeInUp"><a href="#works" class="btn btn-default"><i class="fa fa-flask"></i>  View Project</a> <a href="#contact" class="btn btn-default"><i class="fa fa-paper-plane-o"></i> Start Your Project</a></div>
-                  </div>
+                	<img src="/img/logobig.png" class="animated bounceInUp" alt="logo">
+                  	<h1 class="animated bounceInLeft">Design &bull; Build &bull; Remodel</h1>
+              		<div class="scroll animated fadeInUp">
+              			<a href="#works" class="btn btn-default"><i class="fa fa-wrench"></i>  Jobs We Do</a> 
+              			<a href="#book" class="btn btn-default"><i class="fa fa-calendar"></i> Start Your Project</a>
+              		</div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- #Item 1 -->
       </div>
@@ -367,167 +372,46 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div id="partners" class="container spacer ">
-	<h2 class="text-center  wowload fadeInUp">Some of our happy clients</h2>
-  <div class="clearfix">
-    <div class="col-sm-6 partners  wowload fadeInLeft">
-         <img src="/img/partners/1.jpg"  alt="partners">
-         <img src="/img/partners/2.jpg"  alt="partners">
-         <img src="/img/partners/3.jpg" alt="partners">
-         <img src="/img/partners/4.jpg" alt="partners">
-    </div>
-    <div class="col-sm-6">
 
-
-    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
-    <div class="carousel-inner">  
-      <div class="item active animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="/img/team/1.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>      
-      <span>Angel Smith - <b>eshop Canada</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="/img/team/2.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-      <span>John Partic - <b>Crazy Pixel</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="/img/team/3.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
-      <span>Harris David - <b>Jet London</b></span>
-      </div>
-      </div>
-  </div>
-
-   <!-- Indicators -->
-   	<ol class="carousel-indicators">
-    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-  	</ol>
-  	<!-- Indicators -->
-  </div>
-
-
-
-    </div>
-  </div>
-
-
-<!-- team -->
-<h3 class="text-center  wowload fadeInUp">Our team</h3>
-<p class="text-center  wowload fadeInLeft">Our creative team that is making everything possible</p>
-<div class="row grid team  wowload fadeInUpBig">	
-	<div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="/img/team/8.jpg" alt="img01" class="img-responsive" />
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="/img/team/10.jpg" alt="img01"/>
-        <figcaption>            
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="/img/team/12.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>          
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="/img/team/17.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-        </figcaption>
-    </figure>
-    </div>
-
- 
-</div>
-<!-- team -->
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- About Starts -->
-<div class="highlight-info">
-<div class="overlay spacer">
-<div class="container">
-<div class="row text-center  wowload fadeInDownBig">
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-smile-o  fa-5x"></i><h4>24 Clients</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-rocket  fa-5x"></i><h4>75 Projects</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-cloud-download  fa-5x"></i><h4>454 Downloads</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-map-marker fa-5x"></i><h4>2 Offices</h4>
-	</div>
-</div>
-</div>
-</div>
-</div>
-<!-- About Ends -->
-
-
-
-
-
-
-
-
-<div id="contact" class="spacer">
+<div id="book" class="spacer">
 <!--Contact Starts-->
 <div class="container contactform center">
 <h2 class="text-center  wowload fadeInUp">Get in touch to start your project</h2>
   <div class="row wowload fadeInLeftBig">      
       <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
         <input type="text" placeholder="Name">
-        <input type="text" placeholder="Company">
-        <textarea rows="5" placeholder="Message"></textarea>
+        <input type="text" placeholder="Contact Number">
+        <input type="text" placeholder="Email">
+        <input class="datepicker" size="16" placeholder="{$smarty.now|date_formatter:'%m/%d/%Y'}" type="text" name="date" value="" data-date-format="dd/mm/yyyy">
+        <textarea rows="5" placeholder="Description"></textarea>
         <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
       </div>
   </div>
-
-
-
 </div>
 </div>
 <!--Contact Ends-->
 
-
+<div id="contact" class="container center spacer contactform" style="padding: 2em 15px;">
+	<h2 class="text-center  wowload fadeInUp">Let Us Know How We Can Help</h2>
+  	<div class="clearfix">
+    	<div class="col-lg-6 partners wowload fadeInLeft">
+  	      <img src="https://maps.googleapis.com/maps/api/staticmap?center=51.536848,%20-0.624959&zoom=16&size=550x300&markers=color:blue%7Clabel:S%7C51.536848,%20-0.624959&key=AIzaSyAVLwiLxzrUZqLl7ercND90qpbqy5y_Cek" />
+    	</div>
+	    <div class="col-lg-6 partners">
+			<h4 style="margin-bottom: 10px;">Vision Construction Group Ltd.</h4>
+			61, Doddsfield Road, <br/> <br/>
+			SL2 2BD, Slough<br/> <br/>
+			Phone: 07540982318, 01753462016<br/> <br/>
+			Email: vcgltd1@gmail.com
+			
+		</div>
+	</div>
+</div>
 
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
 <p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-dribbble fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-linkedin fa-2x"></i></a> </p>
-Copyright 2014 Cyrus Creative Studio. All rights reserved.
+	&copy; {date('Y')} Vision Construction Group. All rights reserved.
 </div>
 <!-- # Footer Ends -->
 <a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
@@ -559,6 +443,7 @@ Copyright 2014 Cyrus Creative Studio. All rights reserved.
 
 <!-- boostrap -->
 <script src="/js/bootstrap.js" type="text/javascript" ></script>
+<script src="/js/bootstrap-datepicker.js" type="text/javascript" ></script>
 
 <!-- jquery mobile -->
 <script src="/js/touchSwipe.min.js"></script>
@@ -569,6 +454,18 @@ Copyright 2014 Cyrus Creative Studio. All rights reserved.
 
 <!-- custom script -->
 <script src="/js/script.js"></script>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+		var nowTemp = new Date();
+		var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+		$(".datepicker").each(function(){ $(this).datepicker({
+			onRender: function(date) {
+				    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+			}}).on('changeDate', function(ev) {
+					$(this).datepicker('hide');
+			});
+		});
+	});
+</script>
 </body>
 </html>
