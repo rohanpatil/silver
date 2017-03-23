@@ -67,6 +67,7 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
  */
 CakePlugin::load('SmartyView');
+CakePlugin::load('Sendgrid');
 /**
  * To prefer app translation over plugin translation, you can set
  *

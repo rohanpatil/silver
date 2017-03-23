@@ -56,6 +56,15 @@ class EmailConfig {
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
+	
+	public $sendgrid = array(
+        'transport' => 'Sendgrid.Sendgrid',
+	    'username' => 'rspatil6181',
+	    'password' => 'silversaints123',
+		'from' => 'CustomerCare@vcgroupltd.com',
+		'fromName' => 'Customer Care',
+		'category' => 'transaction'
+    );
 
 	public $fast = array(
 		'from' => 'you@localhost',
