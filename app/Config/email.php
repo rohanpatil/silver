@@ -59,8 +59,8 @@ class EmailConfig {
 	
 	public $sendgrid = array(
         'transport' => 'Sendgrid.Sendgrid',
-	    'username' => 'rspatil6181',
-	    'password' => 'silversaints123',
+	    'username' => 'username',
+	    'password' => 'password',
 		'from' => 'CustomerCare@vcgroupltd.com',
 		'fromName' => 'Customer Care',
 		'category' => 'transaction'
