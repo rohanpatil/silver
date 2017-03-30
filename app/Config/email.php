@@ -36,6 +36,8 @@
  */
 class EmailConfig {
 
+	public $sendgrid;
+	
 	public $default = array(
 		'transport' => 'Mail',
 		'from' => 'you@localhost',
@@ -56,15 +58,6 @@ class EmailConfig {
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
-	
-	public $sendgrid = array(
-        'transport' => 'Sendgrid.Sendgrid',
-	    'username' => 'username',
-	    'password' => 'password',
-		'from' => 'CustomerCare@vcgroupltd.com',
-		'fromName' => 'Customer Care',
-		'category' => 'transaction'
-    );
 
 	public $fast = array(
 		'from' => 'you@localhost',
@@ -96,5 +89,17 @@ class EmailConfig {
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
+	
+	public function __construct() {
+	
+		$this->sendgrid = array(
+				'transport' => 'Sendgrid.Sendgrid',
+				'username' => getenv('SENDGRID_USERNAME'),
+				'password' => getenv('SENDGRID_PASSWORD'),
+				'from' => 'CustomerCare@vcgroupltd.com',
+				'fromName' => 'Customer Care',
+				'category' => 'transaction'
+		);
+	}
 
 }
