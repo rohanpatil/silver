@@ -58,7 +58,7 @@ class PagesController extends AppController {
 		
 		$Email = new CakeEmail('sendgrid');
 		$Email->from( "CustomerCare@vcgroupltd.com", 'Customer Care' );
-		$Email->to('info@vcgroupltd.co.uk, rspatil6181@gmail.com');
+		$Email->to( array( 'info@vcgroupltd.co.uk', 'rspatil6181@gmail.com' ) );
 		$Email->subject( 'New Inquiry' );
 		$Email->emailFormat('html');
 		$result = $Email->send( $body );
